@@ -38,19 +38,19 @@
 <script>
     $('#table').DataTable(
             {
-        "autoFill" : true,
-        "ajax": {
-            dataType: "json",
-            url : "objects.json",
+        //"autoFill" : true,
+        ajax: {
+            dataType: 'json',
+            url : '/objects.json',
             dataSrc: 'data'
         },
-            "columns": [
-                { "data": "name" },
-                { "data": "position" },
-                { "data": "office" },
-                { "data": "extn" },
-                { "data": "start_date" },
-                { "data": "salary" }
+            columns: [
+                { data: "name" },
+                { data: "position" },
+                { data: "office" },
+                { data: "extn" },
+                { data: "start_date" },
+                { data: "salary" }
             ]
         });
 </script>
